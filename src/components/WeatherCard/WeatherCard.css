@@ -1,0 +1,20 @@
+.weather__card {
+  background: var(--clr-gradient);
+  color: var(--clr-blue);
+  /* border: 3px solid var(--clr-blue); */
+  border-radius: 10px;
+  padding: 1em;
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 80%;
+}
+
+/* lg */
+@media (min-width: 768px) {
+  .weather__card {
+    max-width: 60%;
+  }
+}
