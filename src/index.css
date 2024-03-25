@@ -45,6 +45,10 @@ body {
   color: var(--clr-dark);
 }
 
+main {
+  margin-top: 2em;
+}
+
 header {
   color: var(--clr-blue);
   font-size: var(--font-xl);

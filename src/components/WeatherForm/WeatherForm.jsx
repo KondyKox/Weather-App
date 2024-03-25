@@ -1,12 +1,13 @@
-import "./Form.css";
+import "./WeatherForm.css";
 import Button from "../Button/Button";
 import { useState } from "react";
 
-const Form = () => {
+const WeatherForm = ({ onSubmit }) => {
   const [city, setCity] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault;
+    e.preventDefault();
+    onSubmit(true);
   };
 
   return (
@@ -22,4 +23,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default WeatherForm;
