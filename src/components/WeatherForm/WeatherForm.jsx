@@ -1,10 +1,7 @@
 import "./WeatherForm.css";
 import Button from "../Button/Button";
-import { useState } from "react";
 
-const WeatherForm = ({ onSubmit }) => {
-  const [city, setCity] = useState("");
-
+const WeatherForm = ({ onSubmit, onChange }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit(true);
@@ -16,7 +13,7 @@ const WeatherForm = ({ onSubmit }) => {
         className="form__input"
         type="text"
         placeholder="Enter city..."
-        onChange={(e) => setCity(e.target.value)}
+        onChange={(e) => onChange(e.target.value)}
       />
       <Button />
     </form>
