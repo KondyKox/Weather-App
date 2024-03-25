@@ -1,0 +1,22 @@
+:root {
+  --clr-background: #d5eef0;
+  --clr-dark: #1f1d1d;
+  --clr-yellow: #e7e41d;
+  --clr-yellow: #1de7dd;
+
+  --font-sm: 0.75rem;
+  --font-md: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-2xl: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--clr-background);
+  color: var(--clr-dark);
+}
