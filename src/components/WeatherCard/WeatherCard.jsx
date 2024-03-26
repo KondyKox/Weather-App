@@ -3,13 +3,14 @@ import "./WeatherCard.css";
 
 const WeatherCard = ({ lat, lon }) => {
   const [weatherData, setWeatherData] = useState(null);
-  const api_key = "2cf27d9a8473b2f09a7f5944b007e471";
 
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
         const response = await fetch(
-          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api_key}`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${
+            import.meta.env.VITE_API_KEY
+          }`
         );
         const data = await response.json();
 

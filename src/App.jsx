@@ -7,12 +7,11 @@ const App = () => {
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
   const [isWeatherCardVisible, setWeatherCardVisible] = useState(false);
-  const api_key = "2cf27d9a8473b2f09a7f5944b007e471";
 
   const getCoordinates = async () => {
     try {
       const response = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${api_key}`
+        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${import.meta.env.VITE_API_KEY}`
       );
       const data = await response.json();
 
