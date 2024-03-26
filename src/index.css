@@ -23,7 +23,7 @@
   --clr-dark: #1f1d1d;
   --clr-yellow: #e7e41d;
   --clr-blue: #1de7dd;
-  --clr-gradient: linear-gradient(to bottom, #e7e41d, #1de7dd);
+  --clr-gradient: linear-gradient(to bottom, #e7e41d, #e7e41d, #1de7dd);
 
   --font-sm: 0.75rem;
   --font-md: 1rem;
@@ -31,6 +31,7 @@
   --font-xl: 1.5rem;
   --font-2xl: 2rem;
   --font-3xl: 3rem;
+  --font-4xl: 3.5rem;
 }
 
 * {
